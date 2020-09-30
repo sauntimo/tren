@@ -8,9 +8,9 @@ class App extends Component {
 
     async function callExpress() {
       try {
-        let response = await fetch('/api/say-hello/SeanMaxwell')
+        let response = await fetch('/api/say-hello/Tim')
                               .then(res => res.json());
-        alert('Hi this is a response from the backend: ' + response.response);
+        alert('Hi this is a response from the backend: ' + response.message);
       } catch (err) {
         alert(err);
       }
